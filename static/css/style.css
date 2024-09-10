@@ -1,22 +1,27 @@
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 30px;
+  font-size: 30px;
+  font-weight: 400px;
   font-style: normal;
   margin: 0;
   padding: 0;
   color: white;
 }
 
+h1 {
+  margin: 0;
+}
+
 li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 ul {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .header {
@@ -103,5 +108,57 @@ a {
 }
 
 .service_item {
-    padding-left: 32px;
+  padding-left: 32px;
+}
+
+.first_page {
+  height: 900px;
+  width: 1920px;
+  background-image: url("/work/static/images/Rectangle\ 84.png");
+}
+
+.f_page_heading {
+  color: rgba(114, 82, 170, 1);
+  font-size: 64px;
+  font-weight: 400;
+}
+
+.title_container {
+  padding-left: 230px;
+  padding-top: 75px;
+}
+
+.button_container {
+  width: 394px;
+  height: 88px;
+  border-radius: 29px;
+  background-color: rgba(59, 46, 87, 1);
+  margin-left: 230px;
+  margin-top: 169px;
+}
+
+.button {
+  padding-left: 53px;
+  padding-top: 29px;
+  font-size: 24px;
+}
+
+.second_page {
+  height: 3924px;
+  width: 1920px;
+  background-image: url(/work/static/images/Rectangle\ 108.png);
+}
+
+.second_page_title {
+  color: black;
+  padding-top: 134px;
+  padding-left: 577px;
+  font-size: 64px;
+}
+
+.benefit_item_container {
+  border-radius: 40px;
+  background-image: url(/work/static/images/Rectangle\ 110.png);
+  display: flex;
+  color: black;
 }
