@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-image:url("/work/static/images/registration/Rectangle\ 61.png");
+}
+
+.logo_container{
+    margin-left: 825px;
+    margin-top: 85px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+
+    color: #000000;
+}
+
+.form_list_container{
+
+}
+
