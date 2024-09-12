@@ -31,7 +31,7 @@ ul {
 .header {
   height: fit-content;
   font-size: 20px;
-  width: 1920px;
+  width: 100%;
   height: 171px;
   background-color: black;
   text-decoration: none;
@@ -45,7 +45,7 @@ ul {
 .header_down {
   position:absolute;
   z-index: 1000;
-  width: 1920px;
+  width: 100%;
   height: 85px;
 
   background-color: black;
@@ -110,7 +110,7 @@ a {
 }
 
 .line {
-  width: 1920px;
+  width: 100%;
   height: 1px;
   background-color: white;
   margin-top: 6px;
@@ -127,10 +127,11 @@ a {
   padding-left: 32px;
 }
 
+
 .first_page {
   height: 900px;
-  width: 1920px;
-  background-image: url("../../images/index/Rectangle 84.png");
+  width: 100%;
+  background: linear-gradient(287.3deg, rgba(194, 129, 255, 50%) 2.34%, #FFFFFF 88.13%);
 }
 
 .f_page_heading {
@@ -161,8 +162,8 @@ a {
 
 .second_page {
   height: 3642px;
-  width: 1920px;
-  background-image: url("../../images/index/Rectangle\ 108.png");
+  width: 100%;
+  background: linear-gradient(149.4deg, #FFFFFF -13.65%, rgba(254, 253, 255, 0.983636) 28.86%, rgba(194, 129, 255, 70%) 100.25%);
 }
 
 .second_page_title {
@@ -183,11 +184,10 @@ a {
 }
 .benefit_item_container {
   border-radius: 40px;
-  background-image: url("../../images/index/Rectangle\ 110.png");
   width: 280px;
   height: 280px;
   color: black;
-  
+  background: linear-gradient(94.74deg, rgba(255, 255, 255, 0.4) -55.31%, rgba(194, 129, 255, 0.4) 99.19%);
 }
 
 .benefit_items_center_first {
