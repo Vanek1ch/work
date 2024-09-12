@@ -130,7 +130,7 @@ a {
 .first_page {
   height: 900px;
   width: 1920px;
-  background-image: url("../images/index/Rectangle\ 84.png");
+  background-image: url("../../images/index/Rectangle 84.png");
 }
 
 .f_page_heading {
@@ -162,7 +162,7 @@ a {
 .second_page {
   height: 3642px;
   width: 1920px;
-  background-image: url("../images/index/Rectangle\ 108.png");
+  background-image: url("../../images/index/Rectangle\ 108.png");
 }
 
 .second_page_title {
@@ -183,7 +183,7 @@ a {
 }
 .benefit_item_container {
   border-radius: 40px;
-  background-image: url("../images/index/Rectangle\ 110.png");
+  background-image: url("../../images/index/Rectangle\ 110.png");
   width: 280px;
   height: 280px;
   color: black;
