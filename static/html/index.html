@@ -163,16 +163,59 @@
             8 инструментов развития продаж
           </div>
         </div>
-        <div class="develop_tools_slider_container">
-          <ul class="first_slider_item_container">
-            <!-- Слайдер элементов -->
-          </ul>
+        
+          <div class="first_slider_item_container">
+            
+            <button class="prev" > <img src = "../images/index/leftButton.png"/></button>
+            <div class = "slider">
+              <div class="slides">
+                <div class="slide">Слайд 1</div>
+                <div class="slide">Слайд 2</div>
+                <div class="slide">Слайд 3</div>
+                <div class="slide">Слайд 4</div>
+                <div class="slide">Слайд 5</div>
+                <div class="slide">Слайд 6</div>
+                <div class="slide">Слайд 7</div>
+                <div class="slide">Слайд 8</div>
+              </div>
+            </div>
+            <button class="next"><img src = "../images/index/rightButton.png"/></button>
+          </div>
+
         </div>
+        
       </div>
       <div class="third_page"></div>
     </div>
     <footer class="footer"></footer>
+    <script>
+      const slides = document.querySelector('.slides');
+      const prevButton = document.querySelector('.prev');
+      const nextButton = document.querySelector('.next');
+      let currentIndex = 0;
+      const totalSlides = 8;
+      const slidesToShow = 2; 
+      const slideWidth = 554; 
 
+      nextButton.addEventListener('click', () => {
+        if (currentIndex < totalSlides - slidesToShow) {
+          currentIndex++;
+        } else {
+          currentIndex = 0; 
+        }
+        slides.style.transform = `translateX(-${currentIndex * (slideWidth + 157)}px)`;
+      });
+
+      prevButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+        } else {
+          currentIndex = totalSlides - slidesToShow; 
+        }
+        slides.style.transform = `translateX(-${currentIndex * (slideWidth + 157)}px)`;
+      });
+
+    </script>
     <script>
       window.addEventListener('scroll', function () {
         var header_down = document.querySelector('.header_down');
