@@ -252,7 +252,7 @@ a {
 }
 
 .slide {
-  margin-right:157px;
+  margin-right:150px;
   min-width: 550px; 
   height: 350px;
   background-color: white;
@@ -266,6 +266,7 @@ a {
   font-size: 24px;
   color: #333;
 }
+
 
 button.prev, button.next {
   

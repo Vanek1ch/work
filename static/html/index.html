@@ -195,7 +195,9 @@
       let currentIndex = 0;
       const totalSlides = 8;
       const slidesToShow = 2; 
-      const slideWidth = 554; 
+      const slideWidth = 556; 
+
+
 
       nextButton.addEventListener('click', () => {
         if (currentIndex < totalSlides - slidesToShow) {
@@ -203,7 +205,8 @@
         } else {
           currentIndex = 0; 
         }
-        slides.style.transform = `translateX(-${currentIndex * (slideWidth + 157)}px)`;
+        slides.style.transform = `translateX(-${currentIndex * (slideWidth + 150)}px)`;
+    
       });
 
       prevButton.addEventListener('click', () => {
@@ -212,7 +215,8 @@
         } else {
           currentIndex = totalSlides - slidesToShow; 
         }
-        slides.style.transform = `translateX(-${currentIndex * (slideWidth + 157)}px)`;
+        slides.style.transform = `translateX(-${currentIndex * (slideWidth + 150)}px)`;
+   
       });
 
     </script>
