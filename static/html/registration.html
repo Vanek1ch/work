@@ -3,61 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/work/static/css/registration/style.css" />
+    <link rel="stylesheet" href="../../static/css/registration/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Registration</title>
+    <title>LiveCRM</title>
   </head>
   <body>
-    <div class="logo_container">LiveCRM</div>
-    <div class="form_container">
-      <form action="#" method="post" class="registration_form">
-        <ul class="form_list_container">
-          <li class="form_input_item">
-            <div class="form_input_name">Имя</div>
-            <div class="input_text_folder_container">
-              <input type="text" class="input_text_folder" required placeholder="Василий"/>
-            </div>
-          </li>
-          <li class="form_input_item">
-            <div class="form_input_name">Адрес электронной почты</div>
-            <div class="input_text_folder_container">
-              <input type="email" class="input_text_folder" required placeholder="Example@mail.ru"/>
-            </div>
-          </li>
-          <li class="form_input_item">
-            <div class="form_input_name">Номер телефона</div>
-            <div class="input_text_folder_container">
-              <input type="tel" class="input_text_folder" required placeholder="(123) 456 78 90"/>
-            </div>
-          </li>
-          <li class="form_input_item">
-            <div class="form_input_name">Ссылка на ваш магазин</div>
-            <div class="input_text_folder_container">
-              <input type="url" class="input_text_folder" required placeholder="https://linkToYourShop.ru" />
-            </div>
-          </li>
-          <div class="availible_account">
-            Уже есть аккаунт? <a href="#">Вход</a>
-          </div>
-          <li class="form_input_item">
-            <div class="registration_button_container">
-              <button type="submit" class="registration_submit">
-                Зарегистрироваться
-              </button>
-            </div>
-          </li>
-        </ul>
-      </form>
-      <div class="personal_data_agreement">
-        Нажимая кнопку, вы принимаете условия пользовательского<br />соглашения,
-        лицензионного договора и даёте согласие на обработку<br />персональных
-        данных
+    <header class="header">
+      <div class="header__inner">LiveCRM</div>
+    </header>
+    <form action="#" class="registration_form_container">
+      <div class="input_form_container">
+        <label for="name" class="name_label">Имя</label>
+        <input type="text" class="input_form" id="name" required />
       </div>
-    </div>
+      <div class="input_form_container">
+        <label for="name" class="name_label">Адрес электронной почты</label>
+        <input type="email" class="input_form" id="email" required />
+      </div>
+      <div class="input_form_container">
+        <label for="name" class="name_label">Номер телефона</label>
+        <input type="tel" class="input_form" id="phone" required/>
+      </div>
+      <div class="input_form_container">
+        <label for="name" class="name_label">Ссылка на ваш магазин</label>
+        <input type="url" class="input_form" id="link" required/>
+      </div>
+      <p class="already_have_an_account"> Уже есть аккаунт? <a href="#">Вход</a></p>
+      <input
+        type="submit"
+        value="Зарегистрироваться"
+        class="input_form_submit"
+        id="submit"
+      />
+      <p class="license_agreement">
+        Нажимая кнопку, вы принимаете условия пользовательского<br />
+        соглашения, лицензионного договора и даёте согласие на обработку<br />
+        персональных данных
+      </p>
+    </form>
   </body>
 </html>
