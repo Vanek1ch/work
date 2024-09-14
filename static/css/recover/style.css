@@ -70,6 +70,7 @@ body {
   font-weight: 400;
 }
 
+
 .input_form_submit {
   display: flex;
   font-size: min(6vw,24px);
@@ -91,4 +92,9 @@ body {
   font-style: normal;
   font-weight: 400;
   color: #0052cc;
+}
+
+.container_p {
+  display: flex;
+  flex-direction: column;
 }
