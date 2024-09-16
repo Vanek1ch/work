@@ -38,7 +38,7 @@ ul {
   flex-direction: row;
   align-items: center;
   align-content: center;
-  justify-content: space-evenly;
+  justify-content:space-evenly;
   height: 86px;
   background-color: black;
 }
@@ -75,7 +75,7 @@ ul {
   padding-right: 11px;
 }
 .menu_button_container{
-  display: flex;
+  display: none;
   justify-content: flex-end;
   width: 100%;
 }
@@ -330,6 +330,9 @@ button.right_menu_button{
 }
 
 @media (max-width: 525px) {
+  .menu_button_container{
+    display: flex;
+  }
   .header__inner-down{
     display: none;
   }
