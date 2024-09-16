@@ -31,10 +31,28 @@
             <img src="#" alt="person" class="entry_header-person" />
             <div class="number_container">+7(499) 499-49-49</div>
           </div>
-          <button class = "right_menu">
-            <div class = "icon_menu"></div>
+          <div class = "menu_button_container">
+            <button class = "right_menu_button" onclick="toggleMenu()">
+              <div class = "icon_menu"></div>
 
-          </button>
+            </button>
+          </div>
+          <div class = "menu_container">
+            <nav class="menu">
+              
+  
+              
+              <ul>
+                <li><button class = "right_menu_button" id = "inMenuButton" onclick="toggleMenu()">
+                  <div class = "icon_menu"></div></button></li>
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+
         </div>
         <div class="header_separate_line"></div>
         <div class="header__inner-down">
@@ -99,7 +117,15 @@
         </ul>
     </div>
     <footer class="footer_container"></footer>
+    <script>
+      function toggleMenu(){
+        var menu = document.querySelector('.menu')
+        menu.classList.toggle('show');
+      }
+      
 
+
+    </script>
 
 
 

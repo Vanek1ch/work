@@ -74,9 +74,15 @@ ul {
   padding-left: 11px;
   padding-right: 11px;
 }
+.menu_button_container{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
 
-.right_menu{
-  margin-left: min(8%, 30px);
+
+button.right_menu_button{
+  margin-right: 11%;
   display: none;
   height: 86px;
   width: 86px;
@@ -94,6 +100,60 @@ ul {
   background-repeat: no-repeat;
 }
 
+#inMenuButton{
+  margin-left:17px ;
+}
+
+.menu_container{
+  height: 100px;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+.menu{
+  height: 101vh;
+  width: 0;
+  background-color: black;
+  display: flex;
+  flex-shrink: 1;
+  align-items:center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  font-size: 20px;
+  color: white;
+  width: 0; 
+  overflow: hidden; 
+  transition: width 0.5s ease-in-out; 
+}
+.menu.show {
+  width: 70%; /* Высота, достаточная для полного отображения меню */
+}
+
+.menu ul {
+  
+  list-style: none;
+  padding: 0;
+  margin:0;
+}
+
+.menu ul li {
+  border-bottom: 1px solid #444;
+}
+
+.menu ul li:last-child {
+  border-bottom: none;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
 
 .header_separate_line {
   position: relative;
@@ -276,7 +336,10 @@ ul {
   .header_cont{
     height: 86px;
   }
-  .right_menu{
+  .header_separate_line{
+    display: none;
+  }
+  button.right_menu_button{
     display: flex;
   }
   .entry_header-person {
@@ -287,6 +350,7 @@ ul {
   }
   .entry_button {
     font-size: 30px;
+    display: none;
   }
   .first_page_title {
     font-size: 34px;
@@ -318,12 +382,5 @@ ul {
   .second_page_title {
     font-size: 40px;
   }
-
-
-
-  
- 
-
-
 
 }
