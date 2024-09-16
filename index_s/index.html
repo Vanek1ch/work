@@ -14,29 +14,36 @@
   </head>
   <body>
     <header class="header_container">
-      <div class="header__inner-high">
-        <ul class="header_item_list">
-          <li class="header_list_item-logo">LiveCRM</li>
-          <li class="header_list_item">Создание сайтов</li>
-          <li class="header_list_item">Выбрать сайт</li>
-          <li class="header_list_item">Продвижение</li>
-          <li class="header_list_item">Реклама</li>
-          <li class="header_list_item">Блог</li>
-          <li class="header_list_item">Сервисы</li>
-        </ul>
-        <div class="entry_container">
-          <div class="entry_button">Вход</div>
-          <img src="#" alt="person" class="entry_header-person" />
-          <div class="number_container">+7(499) 499-49-49</div>
+      <!-- header_cont добавил чтобы высота оставалась такой же для header_container -->
+      <div class = "header_cont">     
+        <div class="header__inner-high">
+          <ul class="header_item_list">
+            <li class="header_list_item-logo">LiveCRM</li>
+            <li class="header_list_item">Создание сайтов</li>
+            <li class="header_list_item">Выбрать сайт</li>
+            <li class="header_list_item">Продвижение</li>
+            <li class="header_list_item">Реклама</li>
+            <li class="header_list_item">Блог</li>
+            <li class="header_list_item">Сервисы</li>
+          </ul>
+          <div class="entry_container">
+            <div class="entry_button">Вход</div>
+            <img src="#" alt="person" class="entry_header-person" />
+            <div class="number_container">+7(499) 499-49-49</div>
+          </div>
+          <button class = "right_menu">
+            <div class = "icon_menu"></div>
+
+          </button>
         </div>
-      </div>
-      <div class="header_separate_line"></div>
-      <div class="header__inner-down">
-        <div class="service_container">
-          <div class="service_item">Сервис1</div>
-          <div class="service_item">Сервис2</div>
-          <div class="service_item">Сервис3</div>
-          <div class="service_item">Сервис4</div>
+        <div class="header_separate_line"></div>
+        <div class="header__inner-down">
+          <div class="service_container">
+            <div class="service_item">Сервис1</div>
+            <div class="service_item">Сервис2</div>
+            <div class="service_item">Сервис3</div>
+            <div class="service_item">Сервис4</div>
+          </div>
         </div>
       </div>
     </header>
@@ -92,5 +99,24 @@
         </ul>
     </div>
     <footer class="footer_container"></footer>
+
+
+
+
+    <script>
+      window.addEventListener('scroll', function () {
+        var header_down = document.querySelector('.header__inner-down');
+
+        if (window.scrollY > 85) {
+          header_down.style.position = 'fixed';
+          header_down.style.top = '0';
+          header_down.style.left = '0';
+        } else if (window.scrollY < 85) {
+          header_down.style.position = 'relative';
+        }
+      });
+    </script>
+
+
   </body>
 </html>
