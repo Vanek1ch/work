@@ -316,7 +316,30 @@ button.right_menu_button {
 
 
 
+.footer_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 470px;
+  background-color: #E3E3E3;
+}
 
+.footer__info {
+  height: 220px;
+  width:230px;
+}
+
+.footer__info_low_res {
+  display: none;
+}
+
+.footer__info_separate_line {
+  opacity: 1;
+  height: 350px;
+  width: 1px;
+  background-color: #000000;
+}
 
 
 @media (max-width: 1620px) {
@@ -399,5 +422,20 @@ button.right_menu_button {
 
   .second_page_title {
     font-size: 40px;
+  }
+  
+  .footer__info{
+    display: none;
+  }
+
+  .footer__info_separate_line{
+    display: none;
+  }
+
+  .footer__info_low_res {
+    display: flex;
+    height: auto;
+    width: auto;
+    color: #000000;
   }
 }
