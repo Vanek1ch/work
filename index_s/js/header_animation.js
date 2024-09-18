@@ -1,3 +1,5 @@
+/* плавное поднимание шапки на фулл экране */
+
 window.addEventListener('scroll', function () {
     var header_down = document.querySelector('.header__inner-down');
 
