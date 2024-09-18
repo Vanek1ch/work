@@ -10,9 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Document</title>
   </head>
   <body>
+    
     <header class="header_container">
       <!-- header_cont добавил чтобы высота оставалась такой же для header_container -->
       <div class = "header_cont">     
@@ -28,7 +31,7 @@
           </ul>
           <div class="entry_container">
             <div class="entry_button">Вход</div>
-            <img src="#" alt="person" class="entry_header-person" />
+            <img src="images/download 1.png" alt="person" class="entry_header-person" />
             <div class="number_container">+7(499) 499-49-49</div>
           </div>
           <div class = "menu_button_container">
@@ -38,21 +41,25 @@
             </button>
           </div>
           <div class = "menu_container">
+            
+
+
             <nav class="menu">
-              
-  
-              
+              <button class = "hide_menu" onclick = "toggleMenu()"> </button>
+              <div class = "in_menu_entry_container">
+                <div >+7(499) 499-49-49</div>
+                <img src="images/download 1.png" class = "entry_pic_menu" alt="person" />
+              </div>
               <ul>
-                <li><button class = "right_menu_button" id = "inMenuButton" onclick="toggleMenu()">
-                  <div class = "icon_menu"></div></button></li>
-                  <li><a href="#">Главная</a></li>
-                  <li><a href="#">Услуги</a></li>
-                  <li><a href="#">О нас</a></li>
-                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Создание сайтов</a></li>
+                  <li><a href="#">Выбрать сайт</a></li>
+                  <li><a href="#">Продвижение</a></li>
+                  <li><a href="#">Реклама</a></li>
+                  <li><a href="#">Блог</a></li>
+                  <li><a href="#">Сервисы</a></li>             
               </ul>
             </nav>
           </div>
-
         </div>
         <div class="header_separate_line"></div>
         <div class="header__inner-down">
@@ -81,6 +88,9 @@
       </div>
       <div class="second_page">
         <div class="second_page_title">Преимущества LiveCRM</div>
+        
+        
+
         <ul class="benefits_container">
           <li class="benefit_item_container">
             <img src="images/Без имени-1 1.png" alt="count" class="benefit_item_icon">
@@ -128,32 +138,7 @@
 
     
     </footer>
-    <script>
-      function toggleMenu(){
-        var menu = document.querySelector('.menu')
-        menu.classList.toggle('show');
-      }
-      
-
-
-    </script>
-
-
-
-    <script>
-      window.addEventListener('scroll', function () {
-        var header_down = document.querySelector('.header__inner-down');
-
-        if (window.scrollY > 85) {
-          header_down.style.position = 'fixed';
-          header_down.style.top = '0';
-          header_down.style.left = '0';
-        } else if (window.scrollY < 85) {
-          header_down.style.position = 'relative';
-        }
-      });
-    </script>
-
-
+    <script src = "js/toggleMenu.js"></script>
+    <script src = "js/header_animation.js"></script>
   </body>
 </html>
