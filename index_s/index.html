@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -39,7 +40,6 @@
           <div class = "menu_button_container">
             <button class = "right_menu_button" onclick="toggleMenu()">
               <div class = "icon_menu"></div>
-
             </button>
           </div>
           <!-- //// -->
@@ -67,18 +67,21 @@
         </div>
         <!-- //// -->
         <div class="header_separate_line"></div>
-        <!-- нижняя часть шапки -->
-        <div class="header__inner-down">
-          <div class="service_container">
-            <div class="service_item">Сервис1</div>
-            <div class="service_item">Сервис2</div>
-            <div class="service_item">Сервис3</div>
-            <div class="service_item">Сервис4</div>
-          </div>
-        </div>
-        <!-- //// -->
       </div>
+      <!-- //// -->
     </header>
+    <div class="header_down">
+      <div class = "header_down_s">
+        <div class="service_container">
+          <div class="service_item">Сервис1</div>
+          <div class="service_item">Сервис2</div>
+          <div class="service_item">Сервис3</div>
+          <div class="service_item">Сервис4</div>
+        </div>
+      </div>
+    </div>
+
+
     <div class="main_page">
       <div class="first_page">
         <div class="first_page_title">
@@ -97,7 +100,7 @@
         <div class="second_page_title">Преимущества LiveCRM</div>
         <!-- слайдер, видно на меньших экранах -->
         <div class="swiper-container">
-          <div class="swiper-wrapper">
+            <div class="swiper-wrapper">
               <!-- слайды, swiper-slide - контейнер, сам слайд - swiper-slide_main --->
               <div class="swiper-slide">
                 <div class = "swiper-slide_main">Slide1</div>
@@ -109,9 +112,13 @@
                 <div class = "swiper-slide_main">Slide3</div>
               </div>
               <!-- //// -->
-          </div>
-          <!-- //// -->
-      </div>
+            </div>
+            <!-- //// -->
+            <!-- <div class = "swiper-pagination-container">
+              <div class="swiper-pagination"></div>
+            </div> -->
+            
+        </div>
 
         <ul class="benefits_container">
           <li class="benefit_item_container">
@@ -161,10 +168,12 @@
     
     </footer>
     <!-- скрипты -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src = "js/toggleMenu.js"></script>
-    <script src = "js/header_animation.js"></script>
-    <script src = "js/swiper_script.js"></script>
+    
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src = "js/toggleMenu.js"></script>
+<script src = "js/swiper_script.js"></script>
+
+
     <!-- //// -->
   </body>
 </html>

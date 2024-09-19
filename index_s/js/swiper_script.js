@@ -4,7 +4,7 @@ var swiper = new Swiper('.swiper-container', {
     loop: true,
     pagination: {
         el: '.swiper-pagination',
-        clickable: true,
+        clickable: false,
     },
     navigation: {
         nextEl: '.swiper-button-next',

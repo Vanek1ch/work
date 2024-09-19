@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   height: 100%;
-  overflow-x: hidden
+  overflow: auto;
 }
 
 body {
@@ -20,7 +20,7 @@ ul {
 }
 
 .header_cont {
-  height: 173px;
+  height: auto ;
 }
 
 .header_container {
@@ -124,7 +124,7 @@ button.right_menu_button {
   font-size: 20px;
   color: white;
   width: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   transition: width 0.5s ease-in-out;
   flex-direction: column
 }
@@ -184,9 +184,12 @@ button.right_menu_button {
   background-color: white;
 }
 
-.header__inner-down {
-  position: relative;
-  display: flex;
+.header_down {
+  position: sticky;
+  top: 0; 
+  z-index: 1000;
+}
+.header_down_s{
   align-items: center;
   align-content: center;
   justify-content: flex-start;
@@ -195,7 +198,6 @@ button.right_menu_button {
   width: 100%;
   background-color: black;
 }
-
 .service_container {
   margin-left: 11%;
   display: flex;
@@ -318,7 +320,7 @@ button.right_menu_button {
 .swiper-container {
   width: 90%;
   height: 500px; 
-  overflow: hidden; 
+  overflow-x: hidden; 
   display: none;
 }
 
@@ -341,6 +343,15 @@ button.right_menu_button {
   border-radius: 15px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   height: 400px; 
+}
+.swiper-pagination-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-pagination{
+  position: relative;
+  
 }
 
 
@@ -431,7 +442,7 @@ button.right_menu_button {
   .menu_button_container {
     display: flex;
   }
-  .header__inner-down {
+  .header_down{
     display: none;
   }
   .header_cont {
