@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
     <title>Document</title>
   </head>
   <body>
@@ -43,7 +43,6 @@
             </button>
           </div>
           <!-- //// -->
-
           <!-- меню справа на мобилах, появляется по нажатию кнопки  -->
           <div class = "menu_container">
             <nav class="menu">
@@ -96,8 +95,23 @@
       </div>
       <div class="second_page">
         <div class="second_page_title">Преимущества LiveCRM</div>
-        
-        
+        <!-- слайдер, видно на меньших экранах -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <!-- слайды, swiper-slide - контейнер, сам слайд - swiper-slide_main --->
+              <div class="swiper-slide">
+                <div class = "swiper-slide_main">Slide1</div>
+              </div>
+              <div class="swiper-slide">
+                <div class = "swiper-slide_main">Slide2</div>
+              </div>
+              <div class="swiper-slide">
+                <div class = "swiper-slide_main">Slide3</div>
+              </div>
+              <!-- //// -->
+          </div>
+          <!-- //// -->
+      </div>
 
         <ul class="benefits_container">
           <li class="benefit_item_container">
@@ -147,8 +161,10 @@
     
     </footer>
     <!-- скрипты -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src = "js/toggleMenu.js"></script>
     <script src = "js/header_animation.js"></script>
+    <script src = "js/swiper_script.js"></script>
     <!-- //// -->
   </body>
 </html>
