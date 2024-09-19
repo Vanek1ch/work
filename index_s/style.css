@@ -322,6 +322,7 @@ button.right_menu_button {
   height: 500px; 
   overflow-x: hidden; 
   display: none;
+  position: relative;
 }
 
 .swiper-wrapper {
@@ -344,14 +345,13 @@ button.right_menu_button {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   height: 400px; 
 }
-.swiper-pagination-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .swiper-pagination{
-  position: relative;
-  
+  position: absolute; /* Add this */
+  bottom: 0; /* Add this */
+  left: 50%; /* Add this */
+  transform: translateX(-50%); /* Add this */
+  z-index: 100;
 }
 
 
