@@ -1,4 +1,4 @@
-// Инициализация Swiper
+
 var swiper = new Swiper('.swiper-container', {
     loop: true,
     pagination: {
@@ -8,4 +8,14 @@ var swiper = new Swiper('.swiper-container', {
     slidesPerView: 1, 
 
     touchEventsTarget: 'container',
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints:{
+        768:{
+            slidesPerView:2
+        },
+        
+    }
 });

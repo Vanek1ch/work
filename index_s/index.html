@@ -99,7 +99,7 @@
       <div class="second_page">
         <div class="second_page_title">Преимущества LiveCRM</div>
         <!-- слайдер, видно на меньших экранах -->
-        <div class="swiper-container">
+        <div class="swiper-container" id = "first_swiper">
             <div class="swiper-wrapper">
               <!-- слайды, swiper-slide - контейнер, сам слайд - swiper-slide_main --->
               <div class="swiper-slide">
@@ -151,10 +151,8 @@
             <div class="benefit_item_text">Отслеживание эффективности работы сотрудников</div>
           </li>
         </ul>
-
-        <div class = "third_page">
-
         
+      
           <div class = "form_request_container">
             <div class="form_request_title">Попробовать весь функционал <span style="color: red;">бесплатно</span></div>
             <div class="form_request_undertitle">Тестовый тариф на 14 дней</div>
@@ -164,19 +162,43 @@
               <input type="email" placeholder="E-mail" required>
               <input id = "form_request_send_data" type="submit" value="Отправить">
             </form>
-          <div class = " form_request_description">Оставляя заявку вы соглашаетесь с политикой обработки персональных данных</div>
+            <div class = " form_request_description">Оставляя заявку вы соглашаетесь с политикой обработки персональных данных</div>
           </div>
-        </div>
-
-
+          
+          
+          <div class = "review_container">
+            LiveCRM — главный помощник в продажах для бизнеса
+          </div>
+              <div class="swiper-container" id = "second_swiper">
+                <div class="swiper-wrapper">
+                  <!-- слайды, swiper-slide - контейнер, сам слайд - swiper-slide_main --->
+                  <div class="swiper-slide">
+                    <div class = "swiper-slide_main">Slide1</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class = "swiper-slide_main">Slide2</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class = "swiper-slide_main">Slide3</div>
+                  </div>
+                  <!-- //// -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- //// -->
+              </div>
+            
+        
+        
     </div>
     <footer class="footer_container">
       <div class="footer__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</div>
       <div class="footer__info_separate_line"></div>
       <div class="footer__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</div>
       <div class="footer__info_separate_line"></div>
-      <div class="footer__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</div>
-      <div class="footer__info_separate_line"></div>
+      <div class="footer__info">Lorem ipsum dolor sit amet, consectetur adipiscis nostrud</div>
+      <div class="footer__info_separate_line"ng elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui></div>
       <div class="footer__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</div>
       <div class="footer__info_low_res">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</div>
 
@@ -186,7 +208,10 @@
     
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src = "js/toggleMenu.js"></script>
+
 <script src = "js/swiper_script.js"></script>
+
+
     <!-- //// -->
   </body>
 </html>
