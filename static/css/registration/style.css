@@ -82,7 +82,9 @@ body {
   
 }
 
-
+.already_have_an_account_text{
+  text-decoration: none;
+}
 
 .license_agreement {
   font-size: 11px;

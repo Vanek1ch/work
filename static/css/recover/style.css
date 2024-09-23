@@ -98,3 +98,6 @@ body {
   display: flex;
   flex-direction: column;
 }
+.back_text{
+  text-decoration: none;
+}
