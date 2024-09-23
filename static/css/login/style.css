@@ -99,3 +99,13 @@ body {
   font-style: normal;
   font-weight: 400;
 }
+
+.container_p {
+  display: flex;
+  flex-direction: row;
+}
+.remember_me{
+  display: flex;
+  flex-direction: row;
+  margin-right: 100px;
+}

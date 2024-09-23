@@ -218,8 +218,8 @@ button.right_menu_button {
 .main_page {
   display: flex;
   flex-direction: column;
-  /* background-image: url("images/Group\ 10\ .png"); */
-  min-height: 5939px;
+  
+  height: auto;
   background-size: cover;
   background-position: center center;
 }
@@ -325,6 +325,7 @@ button.right_menu_button {
 
 .instruments_header{
   font-size: 64px;
+  margin-top: 150px;
 }
 .instruments_divider{
   margin-top: 50px;
@@ -457,6 +458,7 @@ button.right_menu_button {
 .review_container{
   display: flex;
   font-size: 48px;
+  margin-top: 100px;
 }
 
 .review_divider{
@@ -468,7 +470,7 @@ button.right_menu_button {
   display: flex;
   flex-direction: column; 
   align-items: flex-start;
-  margin-top: 50px;
+ 
 }
 
 .form_button_title{
@@ -493,8 +495,21 @@ button.right_menu_button {
   cursor: pointer;
 }
 
+.triangle_page{
+  width: 100vw;
+  height: 552px;
+  background-image:url(images/Rectangle139.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.third_page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  background: linear-gradient(138.18deg, #FFFFFF 73.14%, #C281FF 201.52%);
 
-
+}
 
 
 
@@ -507,7 +522,7 @@ button.right_menu_button {
 
 
 .footer_container {
-  margin-top: 100px;
+
   display: flex;
   flex-direction: row;
   align-items: center;
