@@ -20,5 +20,3 @@ var swiper = new Swiper('.swiper-container', {
     }
     
 });
-document.querySelector('#prev-button').style.backgroundImage = 'url("index_s/images/leftButton.png")';
-document.querySelector('#next-button').style.backgroundImage = 'url("index_s/images/rightButton.png")';
