@@ -499,7 +499,7 @@ button.right_menu_button {
   display: flex;
   flex-direction:column;
   width: 100%;
-  height: 90%;
+  height: auto;
   justify-content: center;
   align-items: center;
 }
@@ -517,7 +517,7 @@ button.right_menu_button {
   flex-shrink: 1;
   flex-direction: row;
   width: 80%;
-  height: 100%;
+  height: auto;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: flex-start;
